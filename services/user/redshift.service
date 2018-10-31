@@ -1,0 +1,11 @@
+[Unit]
+Description=Redshift blue light filter
+Requires=xorg.target
+After=xorg.target
+
+[Service]
+ExecStart=/usr/bin/redshift
+Environment=DISPLAY=:0.0
+
+[Install]
+WantedBy=default.target
