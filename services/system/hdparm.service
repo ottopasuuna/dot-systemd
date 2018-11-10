@@ -1,0 +1,9 @@
+[Unit]
+Description=hdparm sleep rarely used HDD
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/hdparm -q -S 100 -y /dev/sda
+
+[Install]
+WantedBy=multi-user.target

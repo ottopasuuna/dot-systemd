@@ -1,0 +1,8 @@
+[Unit]
+Description=Ibus keyboard layout
+
+[Service]
+ExecStart=/usr/bin/ibus-daemon -xim
+
+[Install]
+WantedBy=default.target
