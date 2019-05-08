@@ -1,0 +1,27 @@
+[Exec]
+Boot=1
+
+[Files]
+# nvidia-opengl
+Bind=/tmp/.X11-unix
+Bind=/dev/dri
+Bind=/dev/shm
+Bind=/dev/nvidia0
+Bind=/dev/nvidiactl
+Bind=/dev/nvidia-modeset
+
+# input
+Bind=/dev/input
+
+# pulseaudio
+Bind=/run/user/1000/pulse:/run/usr/host/pulse
+
+#alsa
+Bind=/dev/snd
+
+# User files
+Bind=/home/carl/Downloads
+Bind=/media/carl
+
+# Pacman cache
+Bind=/var/cache/pacman/pkg
