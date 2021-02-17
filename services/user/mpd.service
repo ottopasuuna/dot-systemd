@@ -1,4 +1,6 @@
 [Unit]
+User=carl
+PAMName=system-local-login
 Description=Music Player Daemon
 
 [Service]
